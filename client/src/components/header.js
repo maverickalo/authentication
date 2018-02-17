@@ -12,9 +12,3 @@ class Header extends React.Component {
   }
 }
 export default Header;
-
-class hey extends React.Component {
-  render() {
-    return <div>sdkasjd</div>;
-  }
-}
