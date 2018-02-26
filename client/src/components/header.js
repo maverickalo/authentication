@@ -5,7 +5,7 @@ class Header extends React.Component {
     return (
       <nav className="navbar navbar-light">
         <ul className="nav navbar-nav">
-          <li className="nav-item">Sign In</li>
+          <li className="nav-item">Header</li>
         </ul>
       </nav>
     );
