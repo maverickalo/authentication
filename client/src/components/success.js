@@ -1,7 +1,20 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import * as actions from '../actions';
 
-const Success = () => {
-return (<div><h1>YOU DID IT! YOU LOGGED IN!</h1></div>)
+class Success extends React.Component {
+  componentWillMount() {
+    this.props.fetchMessage();
+  }
+  render() {
+    return (
+      <div>
+        <h1>{this.props.message}</h1>
+      </div>
+    );
+  }
 }
-
-export default Success
+function mapStateToProps(state) {
+  return { message: state.auth.message };
+}
+export default connect(mapStateToProps, actions)(Success);

@@ -28,11 +28,11 @@ class Signin extends Component {
     return (
       <form onSubmit={handleSubmit(this.handleFormSubmit.bind(this))}>
         <div className="form-group">
-          <label htmlFor="email">Email</label>
+          <label htmlFor="email">Email:</label>
           <Field name="email" component={renderInput} type="text" />
         </div>
         <div className="form-group">
-          <label htmlFor="password">Email</label>
+          <label htmlFor="password">Password:</label>
           <Field name="password" component={renderInput} type="password" />
         </div>
         {this.renderAlert()}
